@@ -6,4 +6,5 @@ opencv-python
 joblib
 torch
 roboflow
+pymysql  
 mysql-connector-python
