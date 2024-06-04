@@ -7,4 +7,5 @@ joblib
 torch
 roboflow
 pymysql  
+bcrypt==4.0.1
 mysql-connector-python
