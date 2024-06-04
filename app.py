@@ -13,14 +13,13 @@ import io
 model_path = 'best_93_yoloDual.pt'
 detect_dual_script_path = 'yolov9/detect_dual.py'
 
-# Fungsi untuk koneksi ke database
 def get_db_connection():
     return pymysql.connect(
-        host='localhost',
-        user='root',
-        password='',
-        database='deteksi_kayu',
-        cursorclass=pymysql.cursors.DictCursor 
+        host=os.getenv('MYSQL_HOST', '127.0.0.1'),
+        user=os.getenv('MYSQL_USER'),
+        password=os.getenv('MYSQL_PASSWORD'),
+        database=os.getenv('MYSQL_DB'),
+        cursorclass=pymysql.cursors.DictCursor
     )
 
 # Koneksi ke database
