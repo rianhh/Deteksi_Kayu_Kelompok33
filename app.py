@@ -4,9 +4,7 @@ import os
 from PIL import Image
 import subprocess
 import pymysql
-import cv2
 import re
-import base64
 import bcrypt
 from datetime import datetime
 import io
