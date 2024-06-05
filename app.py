@@ -16,10 +16,10 @@ detect_dual_script_path = 'yolov9/detect_dual.py'
 # Fungsi untuk koneksi ke database
 def get_db_connection():
     return pymysql.connect(
-        host='localhost',
-        user='root',
-        password='',
-        database='deteksi_kayu',
+        host='db4free.net',
+        user='kayu123',
+        password='kayu1234',
+        database='kayudatabase',
         cursorclass=pymysql.cursors.DictCursor 
     )
 
