@@ -14,12 +14,12 @@ model_path = 'best_93_yoloDual.pt'
 detect_dual_script_path = 'yolov9/detect_dual.py'
 
 # Fungsi untuk koneksi ke database
-def get_db_connection():
+def get_db_connection(): 
     return pymysql.connect(
-        host='db4free.net',
-        user='kayu123',
-        password='kayu1234',
-        database='kayudatabase',
+        host='25d3ef23-5a8b-4a80-9cbc-212c9cef5913.c8gao0tt0nr65snb1shg.databases.appdomain.cloud',
+        user='ab0b3b9b9ced4eecb2a6333620c517d0',
+        password='9e03b316961b655fa9da6ec2756b8274a8a367af785307f6bcb8d4cbb613b3a8',
+        database='ibmclouddb',
         cursorclass=pymysql.cursors.DictCursor 
     )
 
